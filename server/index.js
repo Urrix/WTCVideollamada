@@ -4,6 +4,8 @@ const http = require("http");
 // Importa el módulo `websocket` para manejar conexiones WebSocket.
 const Socket = require("websocket").server;
 
+const server = require('http').Server(app)
+
 // Crea un servidor HTTP básico.
 const PORT = process.env.PORT || 3000;
 server.listen(PORT, () => {
