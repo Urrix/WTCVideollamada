@@ -7,4 +7,10 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="background_color">#F3F4F6</color> <!-- Fondo gris claro amigable -->
+    <color name="primary_text">#212121</color>     <!-- Texto principal negro -->
+    <color name="secondary_text">#757575</color>   <!-- Texto secundario gris --><!-- Fondo de entrada blanco -->
+    <color name="button_color">#6200EE</color>     <!-- Botón color púrpura (material) -->
+    <color name="button_text">#FFFFFF</color>      <!-- Texto del botón blanco -->
+
 </resources>

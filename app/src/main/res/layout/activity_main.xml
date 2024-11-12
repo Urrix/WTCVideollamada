@@ -1,24 +1,40 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/background_color"
     tools:context=".MainActivity">
 
     <com.google.android.material.textfield.TextInputEditText
-        android:layout_width="match_parent"
+        android:id="@+id/username"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:hint="username"
-        android:layout_alignParentTop="true"
-        android:layout_marginHorizontal="30dp"
-        android:layout_marginTop="30dp"
-        android:id="@+id/username" />
+        android:hint="Username"
+        android:padding="10dp"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/primary_text"
+        android:textColorHint="@color/secondary_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="30dp" />
 
     <com.google.android.material.button.MaterialButton
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:text="Enter"
         android:id="@+id/enterBtn"
-        android:layout_below="@id/username"
-        android:layout_marginHorizontal="30dp" />
-</RelativeLayout>
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Enter"
+        android:backgroundTint="@color/button_color"
+        android:textColor="@color/button_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/username"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="16dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
