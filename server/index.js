@@ -1,12 +1,15 @@
+const express = require('express')
+const app = express()
 // Importa el módulo HTTP para crear un servidor HTTP.
-const http = require("http");
+const server = require('http').Server(app)
 
 // Importa el módulo `websocket` para manejar conexiones WebSocket.
 const Socket = require("websocket").server;
 
 // Crea un servidor HTTP básico.
 const PORT = process.env.PORT || 3000;
-http.listen(PORT, () => {
+
+server.listen(PORT, () => {
     console.log(`Servidor escuchando en el puerto ${PORT}`);
 });
 
