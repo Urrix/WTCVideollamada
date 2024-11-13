@@ -6,7 +6,8 @@
     "start": "node server.js"
   },
   "dependencies": {
-    "websocket": "^1.0.35"
+    "websocket": "^1.0.35",
+    "express": "^4.17.1"
   },
   "engines": {
     "node": ">=14.0.0"
